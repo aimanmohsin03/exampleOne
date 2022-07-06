@@ -291,4 +291,5 @@ module.exports = grunt => {
   grunt.registerTask('docs-css', ['sass:docs', 'postcss:docs']);
   grunt.registerTask('docs', ['docs-css', 'vendor']);
   grunt.registerTask('release', ['swatch', 'docs']);
+  grunt.registerTask('heroku', ['compass:dist', 'autoprefixer', 'imagemin']);
 };
